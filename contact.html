@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | JJ.Graphics</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Header (reuse your existing nav here) -->
+  <header class="site-header">
+    <div class="flex-header">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.png" alt="JJ.Graphics Logo" class="logo-img" />
+      </a>
+    </div>
+  </header>
+
+  <!-- Contact Form -->
+  <main class="gallery-container">
+    <section style="max-width: 600px; margin: 0 auto; padding: 40px; text-align: center;">
+      <h1>Contact</h1>
+      <p style="color: #ccc;">Have a project idea, a question, or just want to say hello? Drop me a message.</p>
+        <div class="form-wrapper">
+  <form action="https://formspree.io/f/xeokzeln" method="POST" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+</div>
+
+    </section>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
