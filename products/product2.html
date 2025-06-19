@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brush Pack Vol. 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="flex-header">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/images/logo.png" alt="JJ.Graphics Logo" class="logo-img" />
+      </a>
+    </div>
+  </header>
+
+  <main style="max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center;">
+  <h1>Brush Pack Vol. 1</h1>
+
+  <div class="glider-contain">
+    <div class="glider">
+      <img src="../assets/images/Product2.jpg" alt="Sample 1" />
+      <img src="../assets/images/Product2.jpg" alt="Sample 2" />
+      <img src="../assets/images/Product2.jpg" alt="Sample 3" />
+    </div>
+    <button class="glider-prev">«</button>
+    <button class="glider-next">»</button>
+    <div role="tablist" class="dots"></div>
+  </div> <!-- 👈 closes glider-contain -->
+
+  <p style="color: #ccc; margin-top: 20px;">
+    A downloadable pack of 50 custom brushes inspired by cloud textures and calligraphy strokes. Compatible with Photoshop and Procreate.
+  </p>
+
+  <a href="https://your-payment-link.com" target="_blank" class="buy-button">Buy Now – $12</a>
+</main>
+
+
+  <footer style="text-align: center; padding: 40px 0; color: #999;">
+    <p>© 2025 JJ.Graphics</p>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<script>
+  new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    dots: '.dots',
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    },
+    draggable: true,
+    rewind: true,
+    scrollLock: true
+  });
+</script>
+
+</body>
+</html>
