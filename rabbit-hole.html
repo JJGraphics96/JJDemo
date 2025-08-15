@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Rabbit Hole | JJ.Graphics</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 </head>
 <body>
 
@@ -25,22 +26,25 @@
   <section style="text-align: center; margin-bottom: 40px;">
     <h2>Cassettes.Hotel</h2>
     <p style="max-width: 600px; margin: 0 auto; color: #aaa;">
-      The sandbox to interpret things seen as seen fit. The goal is to not make sense of but to build in the desolate.
-      a fortress among absurdity. "Cassette", meaning "Little Box". Each brick in the "Hotel” being a vision encapsulated.
-      A gap to be bridged in ones vision and their reality as felt, lived, desired, NEEDED.
+      Cassettes.Hotel is all of the art I make for fun. Art made during emotional, spiritual exploration.
     </p>
   </section>
-
-  <section class="project-grid">
-    <a href="projects/alt1.html" class="project-card">
-      <img src="assets/images/project15.jpg" alt="Molten Iron Logo" loading="lazy" />
-      <span class="project-title">Molten Iron Logo</span>
-    </a>
-    <a href="projects/alt2.html" class="project-card">
-      <img src="assets/images/project16.jpg" alt="Rise" loading="lazy" />
-      <span class="project-title"></span>
-    </a>
+<section style="text-align: center;">
+    <h2>The Church of ONE</h2>
+    <p style="max-width: 600px; margin: 0 auto; color: #aaa;">
+      Light and fire. Dualities and spiritual thresholds.
+    </p>
   </section>
+  <div class="glider-contain">
+    <div class="glider">
+      <img src="../assets/images/Product1.jpg" alt="Sample 1" />
+      <img src="../assets/images/Product1.jpg" alt="Sample 2" />
+      <img src="../assets/images/Product1.jpg" alt="Sample 3" />
+    </div>
+    <button class="glider-prev">«</button>
+    <button class="glider-next">»</button>
+    <div role="tablist" class="dots"></div>
+  </div> <!-- 👈 closes glider-contain -->
 
   <!-- Divider -->
   <hr class="section-divider" />
@@ -53,20 +57,25 @@
     </p>
   </section>
 
-  <section class="project-grid">
-    <a href="projects/alt3.html" class="project-card">
-      <img src="assets/images/project14.jpg" alt="Project" loading="lazy" />
-      <span class="project-title">ONE</span>
-    </a>
-    <a href="projects/alt4.html" class="project-card">
-      <img src="assets/images/project17.jpg" alt="Project" loading="lazy" />
-      <span class="project-title">Hell Sequence</span>
-    </a>
-  </section>
+
 
 </main>
 
   <script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<script>
+  new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    dots: '.dots',
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    },
+    draggable: true,
+    rewind: true,
+    scrollLock: true
+  });
+</script>
 </body>
 <footer style="text-align: center; padding: 40px 0; color: #999;">
     <p>© 2025 JJ.Graphics</p>
