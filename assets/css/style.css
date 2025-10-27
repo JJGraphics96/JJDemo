@@ -323,3 +323,28 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
+/* Make glider images responsive and limit their size */
+.glider img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Optional: limit glider container width on larger screens */
+.glider-contain {
+  max-width: 960px;
+  margin: 0 auto 60px auto;
+  padding: 0 16px;
+}
+
+/* On wider screens, increase slides shown */
+@media screen and (min-width: 768px) {
+  .glider {
+    max-height: 600px;
+  }
+
+  .glider img {
+    max-height: 500px;
+  }
+}
