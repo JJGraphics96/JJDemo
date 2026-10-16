@@ -5,51 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JJ.Graphics</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
+  <!-- LOGO + PDF LINK -->
+  <header class="home-top">
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/logo.png" alt="Jesse Jimenez Design, JJ.Graphics" class="logo-img" />
+    </a>
+    <a href="assets/pdf/JJGraphicsBook26.pdf" target="_blank" rel="noopener" class="pdf-link">
+      View or download my portfolio (PDF)
+    </a>
   </header>
 
-    <section style="text-align: center; margin-bottom: 40px;">
-  <h1 class="landing-title">Jesse Jimenez Design</h1>
-  <p class="landing-subtitle">My working portfolio is continual work in progress. Thanks for stopping by!</p>
+  <main class="home-wrap">
 
-  <div class="portfolio-download">
-    <a href="assets/pdf/JJGraphicsBook26.pdf" target="_blank" class="portfolio-btn">
-      View / Download Portfolio PDF
-    </a>
-  </div>
-</section>
+    <!-- FEATURED VIDEO
+         To change it, edit the 2 things marked below:
+         1) the video code (the part after v= in the YouTube link)  2) the title -->
+    <section class="window" aria-label="Featured video">
+      <div class="window-bar">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Latest video</span>
+      </div>
+      <div class="video-frame" id="featured-video" data-video="0GjIofds1OU"> <!-- 1) video code -->
+        <button type="button" class="video-play" aria-label="Play the latest video">
+          <img alt="" />
+          <span class="play-badge" aria-hidden="true"></span>
+        </button>
+      </div>
+      <p class="featured-caption">ArtCraft video. The Clone Wars have begun</p> <!-- 2) title -->
+      <noscript><p class="featured-caption"><a href="https://www.youtube.com/watch?v=0GjIofds1OU">Watch on YouTube</a></p></noscript>
+    </section>
 
-  <section style="text-align: center; margin-bottom: 40px;">
-  <h1 class="landing-title">Jesse Jimenez Design</h1>
-  <p class="landing-subtitle">My working portfolio is continual work in progress. Thanks for stopping by!</p>
-</section>
-<main class="landing-links">
-  <a href="archive.html">
-    <img src="assets/images/workCover.jpg" alt="Full Archive" class="portal-image" loading="lazy" />
-  </a>
+    <!-- THE TWO OPTIONS -->
+    <nav class="options" aria-label="Where to next">
 
-  <a href="contact.html">
-    <img src="assets/images/contactCover.jpg" alt="Contact" class="portal-image" loading="lazy" />
-  </a>
+      <a href="archive.html" class="folder">
+        <!-- YOUR ICON: when your work icon is ready, remove the arrows on the next line and set the file name -->
+        <!-- <img src="assets/images/icon-work.png" alt="" class="folder-icon" /> -->
+        <span>
+          <span class="folder-name">My work</span>
+          <span class="folder-note">Projects, collabs, and the Rabbit Hole</span>
+        </span>
+      </a>
 
-  <a href="store.html">
-    <img src="assets/images/storeCover.jpg" alt="Store" class="portal-image" loading="lazy" />
-  </a>
+      <a href="store.html" class="folder">
+        <!-- YOUR ICON: when your store icon is ready, remove the arrows on the next line and set the file name -->
+        <!-- <img src="assets/images/icon-store.png" alt="" class="folder-icon" /> -->
+        <span>
+          <span class="folder-name">Store</span>
+          <span class="folder-note">Brushes, textures, fonts, and mockups</span>
+        </span>
+      </a>
 
-  <a href="rabbit-hole.html">
-    <img src="assets/images/rabbitCover.jpg" alt="Extra Works" class="portal-image" loading="lazy" />
-  </a>
-</main>
+    </nav>
+  </main>
 
+  <footer class="site-footer">
+    <p>My working portfolio is continual work in progress. Thanks for stopping by!</p>
+    <p>© 2026 JJ.Graphics</p>
+  </footer>
 
+  <script>
+    (function () {
+      var f = document.getElementById('featured-video');
+      var id = f.dataset.video;
+      var img = f.querySelector('img');
+      img.src = 'https://i.ytimg.com/vi/' + id + '/maxresdefault.jpg';
+      img.onerror = function () { img.onerror = null; img.src = 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg'; };
+      f.querySelector('button').addEventListener('click', function () {
+        f.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0" title="Featured video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+      });
+    })();
+  </script>
   <script src="assets/js/script.js"></script>
 </body>
-<footer style="text-align: center; padding: 40px 0; color: #999;">
-    <p>© 2025 JJ.Graphics</p>
-  </footer>
 </html>
