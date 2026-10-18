@@ -2,7 +2,7 @@
 
 /* ------------------ Colors (change the whole site's look here) ------------------ */
 :root {
-  --espresso: #2a1810;
+  --espresso: #DCBC40;
   --roast: #3f2619;
   --manila: #f0d9a0;
   --manila-deep: #d8b872;
@@ -23,7 +23,7 @@ body {
   padding: 0;
   color: var(--cream);
   background-color: var(--espresso);
-  background-image: radial-gradient(circle at 1px 1px, rgba(240, 217, 160, 0.09) 1px, transparent 0);
+  background-image: radial-gradient(circle at 3px 3px, rgba(0, 0, 0, 0.09) 2px, transparent 0);
   background-size: 22px 22px;
   min-height: 100vh;
   line-height: 1.5;
@@ -169,7 +169,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* ------------------ Page titles ------------------ */
 .landing-title { font-size: 2.5rem; margin-bottom: 10px; }
-.landing-subtitle { font-size: 1.15rem; color: var(--manila); }
+.landing-subtitle { font-size: 1.15rem; color: var(--ink); }
 
 .section-divider {
   border: none; height: 3px; margin: 60px auto; width: 80%;
